@@ -2,9 +2,9 @@
 
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Tag } from 'antd';
-import { useAdminAuditLogs } from '@/hooks';
-import type { AdminAuditLog } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
+import { useAdminAuditLogs } from '@/modules/admin/hooks/useAdminData';
+import type { AdminAuditLog } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
 
 export default function AdminAuditPage() {
   const { data: logs, loading, error, refresh } = useAdminAuditLogs();

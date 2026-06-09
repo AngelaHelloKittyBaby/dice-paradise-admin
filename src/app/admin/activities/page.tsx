@@ -2,10 +2,10 @@
 
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button, Progress, Tag } from 'antd';
-import { useAdminActivities } from '@/hooks';
-import type { AdminActivity } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { ActivityStatusTag, formatAdminNumber } from '@/modules/admin/adminFormat';
+import { useAdminActivities } from '@/modules/admin/hooks/useAdminData';
+import type { AdminActivity } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { ActivityStatusTag, formatAdminNumber } from '@/modules/admin/utils/adminFormat';
 
 const activityTypeMap: Record<AdminActivity['type'], string> = {
   dailyTask: '每日任务',

@@ -11,3 +11,8 @@
  ✓ Compiled /admin in 21s (15494 modules)
  HEAD /admin 200 in 5751ms
  HEAD /admin 200 in 21748ms
+  ▲ Next.js 14.2.3
+  - Local:        http://localhost:3100
+
+ ✓ Starting...
+ ✓ Ready in 32.7s

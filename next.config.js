@@ -1,12 +1,18 @@
 /** @type {import('next').NextConfig} */
-const apiProxyTarget = process.env.API_PROXY_TARGET || 'http://192.168.21.17:8000';
+const {
+  API_VERSION_PATH,
+  DEFAULT_BACKEND_ORIGIN,
+  normalizeBackendOrigin,
+} = require('./config/backend');
+
+const apiProxyTarget = normalizeBackendOrigin(process.env.API_PROXY_TARGET || DEFAULT_BACKEND_ORIGIN);
 
 const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/api/v1/:path*',
-        destination: `${apiProxyTarget}/api/v1/:path*`,
+        source: `${API_VERSION_PATH}/:path*`,
+        destination: `${apiProxyTarget}${API_VERSION_PATH}/:path*`,
       },
     ];
   },

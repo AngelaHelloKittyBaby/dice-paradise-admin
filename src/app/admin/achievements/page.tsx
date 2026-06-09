@@ -2,10 +2,10 @@
 
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button, Tag } from 'antd';
-import { useAdminAchievements } from '@/hooks';
-import type { AdminAchievement } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { formatAdminNumber } from '@/modules/admin/adminFormat';
+import { useAdminAchievements } from '@/modules/admin/hooks/useAdminData';
+import type { AdminAchievement } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { formatAdminNumber } from '@/modules/admin/utils/adminFormat';
 
 const achievementTypeMap: Record<AdminAchievement['type'], string> = {
   score: '分数',

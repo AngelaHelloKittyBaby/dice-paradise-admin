@@ -2,11 +2,10 @@
 
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button, Tag } from 'antd';
-import { useAdminGameRecords } from '@/hooks';
-import type { AdminGameRecord } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { formatAdminNumber } from '@/modules/admin/adminFormat';
-import { GameStatusTag } from '@/modules/admin/adminFormat';
+import { useAdminGameRecords } from '@/modules/admin/hooks/useAdminData';
+import type { AdminGameRecord } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { formatAdminNumber, GameStatusTag } from '@/modules/admin/utils/adminFormat';
 
 const emptyValue = '未接入';
 

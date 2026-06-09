@@ -3,10 +3,10 @@
 import { useState } from 'react';
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button, Descriptions, Drawer, Space, Tag } from 'antd';
-import { useAdminUsers } from '@/hooks';
-import type { AdminUser } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { formatAdminNumber, UserStatusTag } from '@/modules/admin/adminFormat';
+import { useAdminUsers } from '@/modules/admin/hooks/useAdminData';
+import type { AdminUser } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { formatAdminNumber, UserStatusTag } from '@/modules/admin/utils/adminFormat';
 
 const emptyValue = '未接入';
 const accountTypeMap: Record<Exclude<AdminUser['accountType'], null>, string> = {

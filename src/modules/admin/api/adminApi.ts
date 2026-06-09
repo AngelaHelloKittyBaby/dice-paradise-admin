@@ -14,7 +14,7 @@ import type {
   AdminRoom,
   AdminRoomStatus,
   AdminUser,
-} from '@/types/admin';
+} from '@/modules/admin/types';
 
 type QueryValue = string | number | boolean | null | undefined;
 

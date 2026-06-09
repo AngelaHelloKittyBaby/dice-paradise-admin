@@ -3,10 +3,10 @@
 import { ArrowDownOutlined, ArrowUpOutlined, MinusOutlined } from '@ant-design/icons';
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button, Space, Tag } from 'antd';
-import { useAdminLeaderboard } from '@/hooks';
-import type { AdminLeaderboardItem } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { formatAdminNumber } from '@/modules/admin/adminFormat';
+import { useAdminLeaderboard } from '@/modules/admin/hooks/useAdminData';
+import type { AdminLeaderboardItem } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { formatAdminNumber } from '@/modules/admin/utils/adminFormat';
 
 const categoryMap: Record<AdminLeaderboardItem['category'], string> = {
   wins: '胜场',

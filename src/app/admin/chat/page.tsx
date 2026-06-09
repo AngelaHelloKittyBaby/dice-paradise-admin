@@ -2,10 +2,10 @@
 
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button, Tag } from 'antd';
-import { useAdminChatMessages } from '@/hooks';
-import type { AdminChatMessage } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { ChatStatusTag } from '@/modules/admin/adminFormat';
+import { useAdminChatMessages } from '@/modules/admin/hooks/useAdminData';
+import type { AdminChatMessage } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { ChatStatusTag } from '@/modules/admin/utils/adminFormat';
 
 const sourceMap: Record<AdminChatMessage['source'], { label: string; color: string }> = {
   lobby: { label: '大厅', color: 'blue' },

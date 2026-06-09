@@ -2,10 +2,10 @@
 
 import { ProTable, StatisticCard, type ProColumns } from '@ant-design/pro-components';
 import { Button, Space, Tag } from 'antd';
-import { useAdminRewardFlows } from '@/hooks';
-import type { AdminRewardFlow } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { formatAdminNumber } from '@/modules/admin/adminFormat';
+import { useAdminRewardFlows } from '@/modules/admin/hooks/useAdminData';
+import type { AdminRewardFlow } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { formatAdminNumber } from '@/modules/admin/utils/adminFormat';
 
 const rewardTypeMap: Record<AdminRewardFlow['type'], { label: string; color: string }> = {
   earn: { label: '获得', color: 'green' },

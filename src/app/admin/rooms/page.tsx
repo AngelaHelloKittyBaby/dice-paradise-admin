@@ -2,10 +2,10 @@
 
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button, Progress, Tag } from 'antd';
-import { useAdminRooms } from '@/hooks';
-import type { AdminRoom } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { RoomStatusTag } from '@/modules/admin/adminFormat';
+import { useAdminRooms } from '@/modules/admin/hooks/useAdminData';
+import type { AdminRoom } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { RoomStatusTag } from '@/modules/admin/utils/adminFormat';
 
 const emptyValue = '未接入';
 

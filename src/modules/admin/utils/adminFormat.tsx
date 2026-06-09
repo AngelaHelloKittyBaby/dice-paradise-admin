@@ -7,7 +7,7 @@ import type {
   AdminRiskStatus,
   AdminRoomStatus,
   AdminUserStatus,
-} from '@/types/admin';
+} from '@/modules/admin/types';
 
 const numberFormatter = new Intl.NumberFormat('zh-CN');
 

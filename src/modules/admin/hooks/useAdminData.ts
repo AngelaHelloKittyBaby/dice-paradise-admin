@@ -14,7 +14,7 @@ import {
   getAdminRiskEvents,
   getAdminRooms,
   getAdminUsers,
-} from '@/modules/admin/adminApi';
+} from '@/modules/admin/api/adminApi';
 import type {
   AdminAchievement,
   AdminActivity,
@@ -28,7 +28,7 @@ import type {
   AdminRiskEvent,
   AdminRoom,
   AdminUser,
-} from '@/types/admin';
+} from '@/modules/admin/types';
 
 export interface AdminDataState<T> {
   data: T;

@@ -21,7 +21,7 @@ import {
 } from '@ant-design/icons';
 import { PageContainer, ProLayout, type MenuDataItem } from '@ant-design/pro-components';
 import { App as AntApp, Button, ConfigProvider, Space, Tag, Typography } from 'antd';
-import styles from './AdminShell.module.css';
+import styles from '../styles/AdminShell.module.css';
 
 const adminRoutes: MenuDataItem[] = [
   { path: '/admin', name: '运营概览', icon: <DashboardOutlined /> },

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { AdminShell } from '@/modules/admin/AdminShell';
+import { AdminShell } from '@/modules/admin/components/AdminShell';
 
 export const metadata: Metadata = {
   title: '投骰乐园后台 - Dice Paradise Admin',

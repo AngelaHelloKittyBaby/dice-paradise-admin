@@ -3,11 +3,11 @@
 import { ArrowDownOutlined, ArrowUpOutlined } from '@ant-design/icons';
 import { ProCard, ProTable, StatisticCard, type ProColumns } from '@ant-design/pro-components';
 import { Space, Tag, Typography } from 'antd';
-import { useAdminDashboard } from '@/hooks';
-import type { AdminGameRecord, AdminRiskEvent } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { formatAdminNumber, GameStatusTag, RiskLevelTag, RiskStatusTag } from '@/modules/admin/adminFormat';
-import styles from '@/modules/admin/adminPages.module.css';
+import { useAdminDashboard } from '@/modules/admin/hooks/useAdminData';
+import type { AdminGameRecord, AdminRiskEvent } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { formatAdminNumber, GameStatusTag, RiskLevelTag, RiskStatusTag } from '@/modules/admin/utils/adminFormat';
+import styles from '@/modules/admin/styles/adminPages.module.css';
 
 const emptyValue = '未接入';
 

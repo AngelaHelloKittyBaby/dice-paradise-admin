@@ -2,9 +2,9 @@
 
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button, Tag } from 'antd';
-import { useAdminConfig } from '@/hooks';
-import type { AdminConfigItem } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
+import { useAdminConfig } from '@/modules/admin/hooks/useAdminData';
+import type { AdminConfigItem } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
 
 const groupMap: Record<AdminConfigItem['group'], { label: string; color: string }> = {
   game: { label: '游戏', color: 'blue' },

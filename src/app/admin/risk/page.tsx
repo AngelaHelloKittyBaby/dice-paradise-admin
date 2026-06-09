@@ -2,10 +2,10 @@
 
 import { ProTable, type ProColumns } from '@ant-design/pro-components';
 import { Button } from 'antd';
-import { useAdminRiskEvents } from '@/hooks';
-import type { AdminRiskEvent } from '@/types/admin';
-import { AdminDataError, adminEmptyText } from '@/modules/admin/AdminDataState';
-import { RiskLevelTag, RiskStatusTag } from '@/modules/admin/adminFormat';
+import { useAdminRiskEvents } from '@/modules/admin/hooks/useAdminData';
+import type { AdminRiskEvent } from '@/modules/admin/types';
+import { AdminDataError, adminEmptyText } from '@/modules/admin/components/AdminDataState';
+import { RiskLevelTag, RiskStatusTag } from '@/modules/admin/utils/adminFormat';
 
 export default function AdminRiskPage() {
   const { data: risks, loading, error, refresh } = useAdminRiskEvents();

@@ -1,0 +1,107 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.span4 {
+  grid-column: span 4;
+}
+
+.span6 {
+  grid-column: span 6;
+}
+
+.span8 {
+  grid-column: span 8;
+}
+
+.span12 {
+  grid-column: span 12;
+}
+
+.chartPanel {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  height: 220px;
+  padding: 12px 4px 4px;
+}
+
+.chartBarGroup {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.chartBar {
+  width: 100%;
+  min-height: 8px;
+  border-radius: 6px 6px 2px 2px;
+  background: linear-gradient(180deg, #4096ff, #1677ff);
+}
+
+.chartLabel {
+  color: #64748b;
+  font-size: 12px;
+  text-align: center;
+}
+
+.modeList {
+  display: grid;
+  gap: 14px;
+}
+
+.modeRow {
+  display: grid;
+  grid-template-columns: 84px 1fr 44px;
+  align-items: center;
+  gap: 12px;
+}
+
+.modeName {
+  color: #334155;
+  font-size: 13px;
+}
+
+.modeTrack {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #edf2f7;
+}
+
+.modeFill {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.modeValue {
+  color: #64748b;
+  font-size: 13px;
+  text-align: right;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.quietText {
+  color: #64748b;
+}
+
+@media (max-width: 1200px) {
+  .span4,
+  .span6,
+  .span8 {
+    grid-column: span 12;
+  }
+}

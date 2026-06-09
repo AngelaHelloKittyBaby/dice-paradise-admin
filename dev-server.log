@@ -8,3 +8,6 @@
  ✓ Starting...
  ✓ Ready in 32.2s
  ○ Compiling /admin ...
+ ✓ Compiled /admin in 21s (15494 modules)
+ HEAD /admin 200 in 5751ms
+ HEAD /admin 200 in 21748ms
